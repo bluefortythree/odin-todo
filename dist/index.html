@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div id="header">Todo List</div>
+    <div id="main">
+        <div id="projects">
+            <div id="title">My Projects</div>
+            <div id="project-list"></div>
+        </div>
+        <div id="view">
+            <button id="new">Add New Project</button>
+            <form id="form" action="">
+                <div>New Project</div>
+                <fieldset>
+                    <div>
+                        <label for="title">*Title: </label>
+                        <input class="input" type="text" id="project-name" name="title" maxlength="50" required>
+                    </div>
+                    <div>
+                        <label for="description">Description: </label>
+                        <textarea class="input" type="text" id="project-description" name="description" maxlength="750"></textarea>
+                    </div>
+                    <div>
+                        <label for="due">Due Date: </label>
+                        <input class="input" type="date" id="project-due-date" name="due">
+                    </div>
+                    <div>
+                        <label for="priority">Priority: </label>
+                        <select id="project-priority" name="priority">
+                            <option value="" selected></option>
+                            <option value="Low">Low</option>
+                            <option value="High">High</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <div>
+                    <button id="submit" form="form">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

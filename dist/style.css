@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+    height: 100vh;
+    width: 100vw;
+}
+
+#header,
+#projects,
+#view {
+    outline: 1px solid black;
+}
+
+#header {
+    justify-self: center;
+    align-self: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    text-align: center;
+}
+
+#projects {
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+}
+
+#title {
+    justify-self: center;
+    align-self: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#view {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#new {
+    display: grid;
+    font-size: 2rem;
+    background-color: lavender;
+    border-radius: 3rem;
+    padding: 3rem;
+}
+
+#form {
+    display: none;
+    outline: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#form > :nth-child(1) {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#form > :nth-child(3) > button {
+    font-size: 1rem;
+    padding: 10px;
+    background-color: lavender;
+}
+
+fieldset {
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr 1fr;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-right-style: none;
+    border-left-style: none;
+}
+
+fieldset > div {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    
+}
+
+fieldset > div > label {
+    margin: 10px;
+    font-weight: 600;
+    align-self: center;
+}
+
+fieldset > div > input,
+fieldset > div > select {
+    padding: 5px 10px 5px;
+}
+
+fieldset > div > textarea {
+    padding: 10px;
+}
+
+#project-name,
+#project-priority,
+#project-due-date {
+    align-self: center;
+}
+
