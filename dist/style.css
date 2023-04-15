@@ -5,6 +5,7 @@
 
 body {
     display: grid;
+    overflow: hidden;
     grid-template-rows: 1fr 7fr;
     height: 100vh;
     width: 100vw;
@@ -35,10 +36,61 @@ body {
 }
 
 #title {
+    overflow: auto;
     justify-self: center;
     align-self: center;
     font-size: 2rem;
     font-weight: 600;
+}
+
+#project-list {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 79vh;
+    overflow-y: auto;
+   
+}
+
+#project-list > div {
+    margin-bottom: 15px;
+}
+
+.container {
+    display: flex;
+}
+
+.add {
+    font-weight: 600;
+    padding: 10px;
+    width: 60%;
+    background-color: lavender;
+    border: none;
+    word-wrap: break-word;
+    border-right: 1px solid black;
+}
+
+.add2 {
+    padding: 10px;
+    width: 20%;
+    background-color: lavender;
+    border: none;
+    word-wrap: break-word;
+}
+
+.add3 {
+    padding: 10px;
+    width: 20%;
+    background-color: lavender;
+    border: none;
+    word-wrap: break-word;
+    border-right: 1px solid black;
+}
+
+.container:hover .add,
+.container:hover .add2,
+.container:hover .add3 {
+    cursor: pointer;
+    background-color: rgb(204, 204, 250)
 }
 
 #view {
@@ -113,3 +165,6 @@ fieldset > div > textarea {
     align-self: center;
 }
 
+#project-view {
+    display: none;
+}
