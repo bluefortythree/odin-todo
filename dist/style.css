@@ -167,4 +167,12 @@ fieldset > div > textarea {
 
 #project-view {
     display: none;
+    align-items: center;
+    grid-template-rows: 1fr 9fr;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#view-other {
+    height: 79vh;
 }
